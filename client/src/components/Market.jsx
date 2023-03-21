@@ -1,7 +1,7 @@
 import React from "react";
 
 const Market = () => {
-	return <div>Market</div>;
+	return <h1>Market</h1>;
 };
 
 export default Market;
