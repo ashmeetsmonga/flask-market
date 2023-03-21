@@ -5,7 +5,7 @@ const Navbar = () => {
 		<nav className='navbar navbar-expand-lg bg-body-tertiary bg-dark' data-bs-theme='dark'>
 			<div className='container-fluid'>
 				<a className='navbar-brand' href='#'>
-					Navbar
+					Flask Market
 				</a>
 				<button
 					className='navbar-toggler'
@@ -27,7 +27,7 @@ const Navbar = () => {
 						</li>
 						<li className='nav-item'>
 							<a className='nav-link' href='#'>
-								Link
+								Market
 							</a>
 						</li>
 						<li className='nav-item dropdown'>
@@ -60,9 +60,6 @@ const Navbar = () => {
 									</a>
 								</li>
 							</ul>
-						</li>
-						<li className='nav-item'>
-							<a className='nav-link disabled'>Disabled</a>
 						</li>
 					</ul>
 				</div>
