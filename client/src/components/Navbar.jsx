@@ -1,12 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 	return (
 		<nav className='navbar navbar-expand-lg bg-body-tertiary bg-dark' data-bs-theme='dark'>
 			<div className='container-fluid'>
-				<a className='navbar-brand' href='#'>
+				<Link className='navbar-brand' to='/'>
 					Flask Market
-				</a>
+				</Link>
 				<button
 					className='navbar-toggler'
 					type='button'
@@ -26,9 +27,9 @@ const Navbar = () => {
 							</a>
 						</li>
 						<li className='nav-item'>
-							<a className='nav-link' href='#'>
+							<Link className='nav-link' to='market'>
 								Market
-							</a>
+							</Link>
 						</li>
 						<li className='nav-item dropdown'>
 							<a
