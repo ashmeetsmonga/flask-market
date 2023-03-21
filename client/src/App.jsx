@@ -1,7 +1,13 @@
 import { useState } from "react";
+import Navbar from "./components/Navbar";
 
 function App() {
-	return <div className=''>Flask Market</div>;
+	return (
+		<>
+			<Navbar />
+			<h1>Hello</h1>
+		</>
+	);
 }
 
 export default App;
