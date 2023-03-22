@@ -17,7 +17,7 @@ const Market = () => {
 			<h2>Market</h2>
 			{isLoading && <h4>Loading...</h4>}
 			{data && (
-				<table className='table'>
+				<table className='table align-middle'>
 					<thead>
 						<tr>
 							<th scope='col'>S.No</th>
