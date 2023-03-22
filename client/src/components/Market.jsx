@@ -15,35 +15,29 @@ const Market = () => {
 	return (
 		<div className='container'>
 			<h2>Market</h2>
-			<table class='table'>
-				<thead>
-					<tr>
-						<th scope='col'>#</th>
-						<th scope='col'>First</th>
-						<th scope='col'>Last</th>
-						<th scope='col'>Handle</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<th scope='row'>1</th>
-						<td>Mark</td>
-						<td>Otto</td>
-						<td>@mdo</td>
-					</tr>
-					<tr>
-						<th scope='row'>2</th>
-						<td>Jacob</td>
-						<td>Thornton</td>
-						<td>@fat</td>
-					</tr>
-					<tr>
-						<th scope='row'>3</th>
-						<td colspan='2'>Larry the Bird</td>
-						<td>@twitter</td>
-					</tr>
-				</tbody>
-			</table>
+			{isLoading && <h4>Loading...</h4>}
+			{data && (
+				<table className='table'>
+					<thead>
+						<tr>
+							<th scope='col'>S.No</th>
+							<th scope='col'>Name</th>
+							<th scope='col'>Price</th>
+							<th scope='col'>Barcode</th>
+						</tr>
+					</thead>
+					<tbody>
+						{data.map((item, idx) => (
+							<tr key={item.id}>
+								<th scope='row'>{idx + 1}</th>
+								<td>{item.name}</td>
+								<td>{item.price}</td>
+								<td>{item.barcode}</td>
+							</tr>
+						))}
+					</tbody>
+				</table>
+			)}
 		</div>
 	);
 };
